@@ -38,3 +38,6 @@ window.onclick = function(event) {
   }
 }
 
+function Member(){
+	window.location.href = "Member.html";
+}
