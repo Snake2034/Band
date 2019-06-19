@@ -1,1 +1,0 @@
-myApp = new Framework7();
