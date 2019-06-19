@@ -190,7 +190,7 @@
 
             <div style="width: 100%; background-color: white; margin: auto;">
 
-              <button type="button-round" style="font-size: 24px; border-style: none; border-radius: 15px; background-color: #61993b; color: white;">Register </button>
+              <button type="button-round" id="registerModalButton" style="font-size: 24px; border-style: none; border-radius: 15px; background-color: #61993b; color: white;">Register </button>
 
               <br></br>
 
@@ -203,6 +203,48 @@
           </div>
 
         </div>
+
+
+
+      <div id="confirmEmailModal" class="modal"
+         style="
+          display: none;  
+          position: fixed;
+          z-index: 1; 
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: 
+          rgb(0,0,0);  
+          background-color: 
+          rgba(0,0,0,0.4);">
+
+        <!-- EMAIL CONFIRM MODAL -->
+        <div class="modal-content" style="
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 300px;">
+
+          <span class="emailConfirmation" style="
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;">&times;</span>
+
+            <div style="width: 80%; float: center; background-color: white; margin: auto;">
+             <h2 style="text-align: center;">Please verify your new account via your email address.</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
      
     </div>
 
