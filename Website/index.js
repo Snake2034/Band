@@ -25,3 +25,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function register()
+{
+	window.location.href = "register.html";
+}
