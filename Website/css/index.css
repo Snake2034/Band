@@ -1,0 +1,270 @@
+.main{
+	width: 100%; 
+	height: 100%; 
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0),
+	rgba(117, 19, 93, 0.73)), url('../images/homejpg.jpg');
+}
+
+.NavBar{
+	background-color:
+	transparent; height: 40px;
+	width: 80%;
+	margin: auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+#Logo{
+	background-color: transparent;
+	color: white; width: 200px;
+	float: left; font-size:
+	20px;
+	border-style: none;
+}
+
+#memberButton{
+	background-color: transparent;
+	 color: white; 
+	 width: 200px; 
+	 float: left; 
+	 font-size: 20px; 
+	 border-style: none;
+}
+
+#loginButton{
+	background-color:
+	transparent; color: white;
+	width: 150px;
+	float: right;
+	font-size: 20px;
+	border-style: none;
+}
+
+#registerButton{
+	background-color:
+	transparent;
+	color: white;
+	width: 150px;
+	float: right;
+	font-size: 20px;
+	border-style: none;
+}
+
+.Maincontent{
+	width: 100%;
+    float: center; 
+    height: 100%; 
+    background-color: transparent;
+}
+
+#leftDiv{
+	float:left;
+	height: 100%;
+	width: 10%;
+	background-color: transparent;
+}
+
+#heading2{
+	text-align: center;
+	color: white; 
+	font-size: 80px;
+}
+
+#mainDiv{
+	background-color: transparent;
+	float: left;
+	width: 80%;
+	height: 100%;
+}
+
+#firstDiv{
+	background-color: black;
+	opacity: 0.7;
+	width: 300px;
+	height: 400px;
+	float: left; 
+	margin-left: 10%; 
+	display: none; 
+	margin-bottom: 5%;
+}
+
+#secondDiv{
+	background-color: black; 
+	opacity: 0.7;
+	width: 300px; 
+	height: 400px; 
+	float: left; 
+	margin-left: 10%; 
+	display: none; 
+	margin-bottom: 5%;
+}
+
+#thirdDiv{
+	background-color: black;
+	opacity: 0.7;  
+	width: 300px; 
+	height: 400px; 
+	float: left; 
+	margin-left: 10%; 
+	display: none; 
+	margin-bottom: 5%;
+}
+
+#rightDiv{
+	float:right; 
+	height: 100%; 
+	width: 10%; 
+	background-color: transparent;
+}
+
+#getStartedButton{
+	background-color: transparent;
+          color: white; 
+          width: 100%;
+          height: 40px;    
+          font-size: 20px; 
+          border-style: none;
+}
+
+
+
+
+/*LOGIN MODAL CSS INFO*/
+#myModal{
+	display: none;  
+          position: fixed;
+          z-index: 1; 
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: 
+          rgb(0,0,0);  
+          background-color: 
+          rgba(0,0,0,0.4);
+}
+
+.modal-content{
+	background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 300px;
+}
+
+.Close{
+	color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.topModal{
+	width: 60%; float: center; background-color: white; margin: auto;
+}
+
+#loginIusername{
+	font-size: 24px; 
+	border-color: #99dbff;
+}
+
+#loginIpassword{
+	font-size: 24px; 
+	border-color: #99dbff;
+}
+
+#modalLoginButton{
+	font-size: 24px; border-style: none; border-radius: 15px; background-color: #61993b; color: white;
+}
+
+#registerLoginButton{
+	font-size: 16px; border-style: none; background-color: transparent; border-radius: 15px;
+}
+
+
+
+
+
+/*REGISTER MODAL CSS INFO*/
+#registerModal{
+	display: none;  
+          position: fixed;
+          z-index: 1; 
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: 
+          rgb(0,0,0);  
+          background-color: 
+          rgba(0,0,0,0.4);
+}
+
+.modal-content{
+	background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 300px;
+}
+
+.registerClose{
+	color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+}
+
+#registerIemail{
+	font-size: 24px; border-color: #99dbff;
+}
+
+#registerIusername{
+	font-size: 24px; border-color: #99dbff;
+}
+
+#registerIpassword{
+	font-size: 24px; border-color: #99dbff;
+}
+
+#registerModalButton{
+	font-size: 24px; border-style: none; border-radius: 15px; background-color: #61993b; color: white;
+}
+
+#loginRegisterButton{
+	font-size: 16px; border-style: none; background-color: transparent; border-radius: 15px;
+}
+
+
+/*EMAIL MODAL CSS INFO*/
+#confirmEmailModal{
+	display: none;  
+          position: fixed;
+          z-index: 1; 
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: 
+          rgb(0,0,0);  
+          background-color: 
+          rgba(0,0,0,0.4);
+}
+
+.model-content{
+	background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 300px;
+}
+
+.emailConfirmation{
+	color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+}

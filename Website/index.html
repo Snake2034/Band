@@ -7,94 +7,52 @@
 
     <link rel="stylesheet" href="framework7-4.4.3\packages\core\css\framework7.min.css">
 
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
   </head>
 
   <body> 
   
-  <!-- main div -->
-   <div class="main" style=" width: 100%; height: 100%; background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.73)), url('images/homejpg.jpg');">
+  <div class="main">
 
-    <!-- inner top bar -->
-        <div class="NavBar" style="background-color: transparent; height: 40px; width: 80%; margin: auto; position: relative; padding-top: 20px;"> 
+        <!-- inner top bar -->
+        <div class="NavBar"> 
 
-        <!-- Logo Name -->
-          <button type="button-round" style="background-color: transparent; color: white; width: 200px; float: left; font-size: 20px; border-style: none;">LOGO IMG</button>
+          <!-- Logo Name -->
+          <button id="Logo" type="button-round" >LOGO IMG</button>
 
-        <!-- home button -->
-          <button type="button-round" onclick="Member()" style="background-color: transparent; color: white; width: 200px; float: left; font-size: 20px; border-style: none;">MEMBERS</button>
+          <!-- home button -->
+          <button id="memberButton" type="button-round" onclick="Member()">MEMBERS</button>
 
-        <!-- login button -->
-          <button type="button-round" id="loginButton" style="background-color: transparent; color: white; width: 150px; float: right; font-size: 20px; border-style: none;">LOGIN</button>
+          <!-- login button -->
+          <button type="button-round" id="loginButton">LOGIN</button>
 
-        <!-- register button -->
-           <button type="button-round" id="registerButton" style="background-color: transparent; color: white; width: 150px; float: right; font-size: 20px; border-style: none;">REGISTER</button>
+          <!-- register button -->
+          <button type="button-round" id="registerButton">REGISTER</button>
 
         </div>
 
     <!-- Main page content -->
-        <div class="Maincontent" 
-        style="
-        width: 100%;
-        margin: auto; 
-        float: center; 
-        height: 100%; 
-        background-color: transparent; 
-        padding-top: 10%;">
+        <div class="Maincontent">
         
-        <div style="width: 50%; height: 30%;  margin: auto; ">
-
-          <h1 style="
-          font-size: 70px; 
-          color: white; 
-          text-align: center;">
+          <h1 style="font-size: 70px; color: white; text-align: center;">
             Giving musicians the connection they deserve. </h1>
 
-             <!-- Get started button -->
-          <button type="button-round" 
-          style="
-          background-color: transparent;
-          color: white; 
-          width: 100%;
-          height: 40px;    
-          font-size: 20px; 
-          border-style: none;">
-
-            Get Started</button>
-          
-        </div>
+          <!-- Get started button -->
+          <button id="getStartedButton" type="button-round">Get Started</button>
+            
 
         </div>
 
-        <div id="myModal" class="modal"
-         style="
-          display: none;  
-          position: fixed;
-          z-index: 1; 
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: 
-          rgb(0,0,0);  
-          background-color: 
-          rgba(0,0,0,0.4);">
+        <div id="myModal" class="modal">
 
         <!-- LOGIN MODAL -->
-        <div class="modal-content" style="
-          background-color: #fefefe;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 300px;">
+        <div class="modal-content">
 
-          <span class="Close" style="
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;">&times;</span>
+          <span class="Close">&times;</span>
 
-            <div style="width: 60%; float: center; background-color: white; margin: auto;">
+            <div class="topModal">
+
              <h2 style="text-align: center;">Log in</h2>
 
             </div>
@@ -102,12 +60,12 @@
             <div style="width: 100%; background-color: white; margin: auto;">
               
               <p style="">Username</p>
-              <input type="text" name="userNameInput" 
-              style="font-size: 24px; border-color: #99dbff;">
+
+              <input id="loginIusername" type="text" name="userNameInput">
 
               <p style="">Password</p>
-              <input type="text" name="userNameInput"
-              style="font-size: 24px; border-color: #99dbff;">
+
+              <input id="loginIpassword" type="text" name="userNameInput">
 
               <a href="" style="float: right;" >Forgot Password?</a>
 
@@ -117,13 +75,13 @@
 
             <div style="width: 100%; background-color: white; margin: auto;">
 
-              <button type="button-round" style="font-size: 24px; border-style: none; border-radius: 15px; background-color: #61993b; color: white;">Log in</button>
+              <button id="modalLoginButton" type="button-round">Log in</button>
 
               <br></br>
 
               <p style="text-align: center;">Dont have an account?</p>
 
-              <button type="button-round" id="registerLoginButton" style="font-size: 16px; border-style: none; background-color: transparent; border-radius: 15px;">Register</button>
+              <button type="button-round" id="registerLoginButton">Register</button>
 
             </div>
 
@@ -133,56 +91,28 @@
 
 
 
-
-
-
-        <div id="registerModal" class="modal"
-         style="
-          display: none;  
-          position: fixed;
-          z-index: 1; 
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: 
-          rgb(0,0,0);  
-          background-color: 
-          rgba(0,0,0,0.4);">
-
         <!-- REGISTER MODAL -->
-        <div class="modal-content" style="
-          background-color: #fefefe;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 300px;">
+        <div id="registerModal" class="modal">
+    
+        <div class="modal-content">
 
-          <span class="registerClose" style="
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;">&times;</span>
+          <span class="registerClose">&times;</span>
 
             <div style="width: 60%; float: center; background-color: white; margin: auto;">
-             <h2 style="text-align: center;">Register</h2>
+              <h2 style="text-align: center;">Register</h2>
 
             </div>
 
             <div style="width: 100%; background-color: white; margin: auto;">       
 
               <p style="">Email</p>
-              <input type="text" name="emailInput" 
-              style="font-size: 24px; border-color: #99dbff;">
+              <input id="registerIemail" type="text" name="emailInput">
 
               <p style="">Username</p>
-              <input type="text" name="userNameInput" 
-              style="font-size: 24px; border-color: #99dbff;">
+              <input id="registerIusername" type="text" name="userNameInput">
 
               <p style="">Password</p>
-              <input type="text" name="userNameInput"
-              style="font-size: 24px; border-color: #99dbff;">
+              <input id="registerIpassword" type="text" name="userNameInput">
 
             </div>
 
@@ -190,13 +120,13 @@
 
             <div style="width: 100%; background-color: white; margin: auto;">
 
-              <button type="button-round" id="registerModalButton" style="font-size: 24px; border-style: none; border-radius: 15px; background-color: #61993b; color: white;">Register </button>
+              <button type="button-round" id="registerModalButton">Register</button>
 
               <br></br>
 
               <p style="text-align: center;">Already have an account?</p>
 
-              <button type="button-round" id="loginRegisterButton" style="font-size: 16px; border-style: none; background-color: transparent; border-radius: 15px;">Login</button>
+              <button type="button-round" id="loginRegisterButton">Login</button>
 
             </div>
 
@@ -205,37 +135,16 @@
         </div>
 
 
+       <!-- EMAIL CONFIRM MODAL -->
+      <div id="confirmEmailModal" class="modal">
 
-      <div id="confirmEmailModal" class="modal"
-         style="
-          display: none;  
-          position: fixed;
-          z-index: 1; 
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: 
-          rgb(0,0,0);  
-          background-color: 
-          rgba(0,0,0,0.4);">
+       
+        <div class="modal-content">
 
-        <!-- EMAIL CONFIRM MODAL -->
-        <div class="modal-content" style="
-          background-color: #fefefe;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 300px;">
-
-          <span class="emailConfirmation" style="
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;">&times;</span>
+          <span class="emailConfirmation">&times;</span>
 
             <div style="width: 80%; float: center; background-color: white; margin: auto;">
+
              <h2 style="text-align: center;">Please verify your new account via your email address.</h2>
 
             </div>
