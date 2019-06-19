@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+
+    <title>How it Works</title>
+
+    <link rel="stylesheet" href="framework7-4.4.3\packages\core\css\framework7.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/getstarted.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script>
+     $( document ).ready(function() {
+        $("#firstDiv").fadeIn(1000);
+        $("#secondDiv").fadeIn(3000);
+        $("#thirdDiv").fadeIn(5000);
+      });
+    </script>
+
+  </head>
+
+  <body onresize="resizeFunction()"> 
+  
+  <div class="main">
+
+        <!-- inner top bar -->
+        <div class="NavBar"> 
+
+          <!-- Logo Name -->
+          <button id="Logo" type="button-round" >LOGO IMG</button>
+
+          <!-- login button -->
+          <button type="button-round" id="loginButton">LOGIN</button>
+
+          <!-- register button -->
+          <button type="button-round" id="registerButton">REGISTER</button>
+
+        </div>
+
+    <!-- Main page content -->
+        <div class="Maincontent">
+        
+          <div id="leftDiv" ></div>
+
+            <h2 id="heading2"> how it works.</h2>
+
+            <div id="mainDiv">
+          
+              <div id="firstDiv"></div>
+
+              <div id="secondDiv"></div>
+
+              <div id="thirdDiv"></div>
+
+            </div>
+
+        <div id="rightDiv"></div>  
+
+        </div>
+
+        <div id="myModal" class="modal">
+
+        <!-- LOGIN MODAL -->
+        <div class="modal-content">
+
+          <span class="Close">&times;</span>
+
+            <div class="topModal">
+
+             <h2 style="text-align: center;">Log in</h2>
+
+            </div>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+              
+              <p style="">Username</p>
+
+              <input id="loginIusername" type="text" name="userNameInput">
+
+              <p style="">Password</p>
+
+              <input id="loginIpassword" type="text" name="userNameInput">
+
+              <a href="" style="float: right;" >Forgot Password?</a>
+
+            </div>
+
+            <br></br>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+
+              <button id="modalLoginButton" type="button-round">Log in</button>
+
+              <br></br>
+
+              <p style="text-align: center;">Dont have an account?</p>
+
+              <button type="button-round" id="registerLoginButton">Register</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- REGISTER MODAL -->
+        <div id="registerModal" class="modal">
+    
+        <div class="modal-content">
+
+          <span class="registerClose">&times;</span>
+
+            <div style="width: 60%; float: center; background-color: white; margin: auto;">
+              <h2 style="text-align: center;">Register</h2>
+
+            </div>
+
+            <div style="width: 100%; background-color: white; margin: auto;">       
+
+              <p style="">Email</p>
+              <input id="registerIemail" type="text" name="emailInput">
+
+              <p style="">Username</p>
+              <input id="registerIusername" type="text" name="userNameInput">
+
+              <p style="">Password</p>
+              <input id="registerIpassword" type="text" name="userNameInput">
+
+            </div>
+
+            <br></br>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+
+              <button type="button-round" id="registerModalButton">Register</button>
+
+              <br></br>
+
+              <p style="text-align: center;">Already have an account?</p>
+
+              <button type="button-round" id="loginRegisterButton">Login</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+       <!-- EMAIL CONFIRM MODAL -->
+      <div id="confirmEmailModal" class="modal">
+
+       
+        <div class="modal-content">
+
+          <span class="emailConfirmation">&times;</span>
+
+            <div style="width: 80%; float: center; background-color: white; margin: auto;">
+
+             <h2 style="text-align: center;">Please verify your new account via your email address.</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+     
+    </div>
+
+       
+    </style>
+
+    <script type="text/javascript" src="framework7-4.4.3\packages\core\js\framework7.min.js"></script>
+
+    <script type="text/javascript" src="getstarted.js"></script>
+
+ 
+  </body>
+</html>              
+            
