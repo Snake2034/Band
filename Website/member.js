@@ -1,7 +1,5 @@
 myApp = new Framework7();
 
-var height = window.innerHeight;
-
 var l = document.getElementById("leftDiv");
 var r = document.getElementById("rightDiv");
 var m = document.getElementById("mainDiv");
@@ -15,15 +13,45 @@ function resizeFunction(){
 		r.style.display = "none";
 		document.getElementById("mainDiv").style.width = "100%";
 	}
-	else{
+	else
+	{
 		l.style.display = "block";
 		r.style.display = "Block";
 		document.getElementById("mainDiv").style.width = "80%";
 	}
-			
+
+	if(width < 600)
+	{
+		document.getElementById("loginButton").style.fontSize = "15px"; 
+		document.getElementById("loginButton").style.width = "100px"; 
+		document.getElementById("rightMain").style.display = "none";
+		document.getElementById("leftMain").style.width = "100%"
+
+	}
+	else
+	{
+		document.getElementById("loginButton").style.fontSize = "20px"; 
+		document.getElementById("loginButton").style.width = "150px";
+		document.getElementById("rightMain").style.display = "block";
+		document.getElementById("leftMain").style.width = "40%"
+	}			
 }
 
+function loadFunc()
+{
+	for(var i = 0; i < 10; i++)
+	{
+		var div = document.createElement("div");
+		div.style.width= "100%";
+		div.style.height = "200px";
+		div.style.opacity = "1"
+		div.style.background = "white";
+		div.style.color = "white";
+		div.style.marginBottom = "10px";
 
+		document.getElementById("leftMain").appendChild(div);
+	}
+}
 
 
 // Get the modal
@@ -91,6 +119,10 @@ function Member(){
 	window.location.href = "Member.html";
 }
 
+function getStarted(){
+	window.location.href = "getstarted.html";
+}
+
 function Home(){
-	window.location.href = "index.html";
+	window.location.href = "home.html";
 }

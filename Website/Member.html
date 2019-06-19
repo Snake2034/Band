@@ -1,271 +1,197 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
 
     <title>Members</title>
 
-     <!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   -->
     <link rel="stylesheet" href="framework7-4.4.3\packages\core\css\framework7.min.css">
-     
+
+    <link rel="stylesheet" type="text/css" href="css/member.css">
+
   </head>
-<body>
-  <!-- main div -->
-   <div class="main" style=" width: 100%; height: 100%; background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.73)), url('images/homejpg.jpg');">
-    <div class="NavBar" style="background-color: transparent; height: 40px; width: 80%; margin: auto; position: relative; padding-top: 20px;"> 
 
-        <!-- Logo Name -->
-          <button type="button-round" style="background-color: transparent; color: white; width: 200px; float: left; font-size: 20px; border-style: none;">LOGO IMG</button>
+  <body onresize="resizeFunction()" onload="loadFunc()" > 
+  
+  <div class="main">
 
-        <!-- home button -->
-          <button type="button-round" onclick="Member()" style="background-color: transparent; color: white; width: 200px; float: left; font-size: 20px; border-style: none;">MEMBERS</button>
+        <!-- inner top bar -->
+        <div class="NavBar"> 
 
-        <!-- login button -->
-          <button type="button-round" id="loginButton" style="background-color: transparent; color: white; width: 150px; float: right; font-size: 20px; border-style: none;">LOGIN</button>
+          <!-- Logo Name -->
+          <img src="images/logo.png" style="width:50px;height:50px; float: left;">
 
-        <!-- register button -->
-           <button type="button-round" id="registerButton" style="background-color: transparent; color: white; width: 150px; float: right; font-size: 20px; border-style: none;">REGISTER</button>
+          <!-- home button -->
+          <button id="homeButton" type="button-round" onclick="Home()">Home</button>
+
+          <!-- login button -->
+          <button type="button-round" id="loginButton">Log in</button>
+
+          <!-- register button -->
+          <button type="button-round" id="registerButton">Sign up</button>
 
         </div>
-      <div class="col-lg-1" style="float: left; width: 15%; height: 100%;"></div>
-      <div class="col-lg-3" style="float:left; width:25%; height: 90%; overflow:hidden; overflow-y:scroll;">
-        <ul>
-          <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
+
+      <!-- Main page content -->
+        <div class="Maincontent" id="mainDivc">
+      
+          <div id="leftDiv" ></div>
+
+            <div id="mainDiv">
+              <div id="filterBar">
+                
+                <input type="text" name="search" placeholder="search..." style="float: left; font-size: 22px;">
               </div>
-              <div class="container">
+
+              <div id="leftMain">
+                
+
               </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
+
+
+              <div id="rightMain">
+
+                <h1 style="color: black; font-size: 80px;">Start by selecting a profile</h1>
+
               </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-            <li class="listbox">
-              <div class="container">
-                <div class="one"><h1>UserName</h1></div>
-                <div class="one">This is what i play...</div>
-                <div class="two"><img style=" background: black; height: 75px; width: 75px"><a href=""> Profile</a></img></div>
-              </div>
-              <div class="container">
-              </div>
-              <div>
-                <div>Country</div>
-                <div>Genre</div>
-              </div>
-              <hr></hr>
-              <div>looking for job/ In band</div>
-            </li>
-          </ul>
+                
+          </div>
+
+
+          </div>
+
+          <div id="rightDiv"></div>  
+
         </div>
-        <div class="profileBox col-lg-7 col-md-" style="float: left; width: 45%; height: 100%;"></div>
-        <div class="col-lg-1" style="float: right; width: 15%; height: 100%;background: grey"></div></div>
+
+        <div id="myModal" class="modal">
+
+        <!-- LOGIN MODAL -->
+        <div class="modal-content">
+
+          <span class="Close">&times;</span>
+
+            <div class="topModal">
+
+             <h2 style="text-align: center;">Log in</h2>
+
+            </div>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+              
+              <p style="">Username</p>
+
+              <input id="loginIusername" type="text" name="userNameInput">
+
+              <p style="">Password</p>
+
+              <input id="loginIpassword" type="text" name="userNameInput">
+
+              <a href="" style="float: right;" >Forgot Password?</a>
+
+            </div>
+
+            <br></br>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+
+              <button id="modalLoginButton" type="button-round">Log in</button>
+
+              <br></br>
+
+              <p style="text-align: center;">Dont have an account?</p>
+
+              <button type="button-round" id="registerLoginButton">Register</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- REGISTER MODAL -->
+        <div id="registerModal" class="modal">
+    
+        <div class="modal-content">
+
+          <span class="registerClose">&times;</span>
+
+            <div style="width: 60%; float: center; background-color: white; margin: auto;">
+              <h2 style="text-align: center;">Register</h2>
+
+            </div>
+
+            <div style="width: 100%; background-color: white; margin: auto;">       
+
+              <p style="">Email</p>
+              <input id="registerIemail" type="text" name="emailInput">
+
+              <p style="">Username</p>
+              <input id="registerIusername" type="text" name="userNameInput">
+
+              <p style="">Password</p>
+              <input id="registerIpassword" type="text" name="userNameInput">
+
+            </div>
+
+            <br></br>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+
+              <button type="button-round" id="registerModalButton">Register</button>
+
+              <br></br>
+
+              <p style="text-align: center;">Already have an account?</p>
+
+              <button type="button-round" id="loginRegisterButton">Login</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+       <!-- EMAIL CONFIRM MODAL -->
+      <div id="confirmEmailModal" class="modal">
+
+       
+        <div class="modal-content">
+
+          <span class="emailConfirmation">&times;</span>
+
+            <div style="width: 80%; float: center; background-color: white; margin: auto;">
+
+             <h2 style="text-align: center;">Please verify your new account via your email address.</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-  </div>
-
-  </div>
-    <style>
-    ::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-  margin: 20px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  opacity: 0.7;
-  background: #2A2D30; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #02080D; 
-}
-    .listbox{ 
-      list-style-type:none;
-      box-shadow: 0 1 0 0 #888888;
-      background-color: black;
-      color: white;
-      margin: 20px;
-      margin-left: 10%;
-      opacity: 0.7;
-      width:75%;
-      border-radius: 5px;
-      padding: 20px;
-    }
-    .profileBox{ 
-      list-style-type:none;
-      box-shadow: 0 1 0 0 #888888;
-      background-color: black;
-      color: white;
-      margin: 20px;
-      opacity: 0.7;
-      width:75%;
-      border-radius: 5px;
-      padding: 20px;
-    }
      
-     .container {
-    width: 90%;
-    margin: auto;
-    padding: 5px;
-    }
-    .one {
-        width: 80%;
-        float: left;
-    }
-    .two {
-        margin-left: 80%;
-    }
-</body>
-</html>
+    </div>
+
+
+    <style type="text/css">
+      
+      .close:hover,
+      .close:focus{
+        color:black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+    </style>
+
+    <script type="text/javascript" src="framework7-4.4.3\packages\core\js\framework7.min.js"></script>
+
+    <script type="text/javascript" src="member.js"></script>
+
+  </body>
+</html>              

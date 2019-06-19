@@ -22,6 +22,24 @@
 	border-style: none;
 }
 
+#homeButton{
+	background-color: transparent;
+	 color: white; 
+	 width: 200px; 
+	 float: left; 
+	 font-size: 20px; 
+	 border-style: none;
+}
+
+#memberButton{
+	background-color: transparent;
+	 color: white; 
+	 width: 200px; 
+	 float: left; 
+	 font-size: 20px; 
+	 border-style: none;
+}
+
 #loginButton{
 	background-color: transparent; 
 	color: white;
@@ -34,29 +52,11 @@
 	border-color: white;
 }
 
-#memberButton{
-	background-color: transparent;
-	 color: white; 
-	 width: 200px; 
-	 float: left; 
-	 font-size: 20px; 
-	 border-style: none;
-}
-
-#homeButton{
-	background-color: transparent;
-	 color: white; 
-	 width: 200px; 
-	 float: left; 
-	 font-size: 20px; 
-	 border-style: none;
-}
-
 #registerButton{
 	background-color:
 	transparent;
 	color: white;
-	width: 150px;
+	width: 100px;
 	float: right;
 	font-size: 20px;
 	border-style: none;
@@ -64,9 +64,10 @@
 
 .Maincontent{
 	width: 100%;
-    float: center; 
     height: 100%; 
     background-color: transparent;
+    padding-top: 20px;
+    text-align: center;
 }
 
 #leftDiv{
@@ -83,43 +84,11 @@
 }
 
 #mainDiv{
-	background-color: transparent;
+	background-color: black;
 	float: left;
 	width: 80%;
-	height: 100%;
-}
-
-#firstDiv{
-	background-color: black;
-	opacity: 0.7;
-	width: 300px;
-	height: 400px;
-	float: left; 
-	margin-left: 10%; 
-	display: none; 
-	margin-bottom: 5%;
-}
-
-#secondDiv{
-	background-color: black; 
-	opacity: 0.7;
-	width: 300px; 
-	height: 400px; 
-	float: left; 
-	margin-left: 10%; 
-	display: none; 
-	margin-bottom: 5%;
-}
-
-#thirdDiv{
-	background-color: black;
-	opacity: 0.7;  
-	width: 300px; 
-	height: 400px; 
-	float: left; 
-	margin-left: 10%; 
-	display: none; 
-	margin-bottom: 5%;
+	height: 85%;
+	margin-bottom: 50px;
 }
 
 #rightDiv{
@@ -129,31 +98,91 @@
 	background-color: transparent;
 }
 
+#filterBar{
+	height: 40px;
+	width: 100%;
+	background-color: #ebebeb;
+}
+
+#leftMain{
+	width: 40%;
+	height: 100%;
+	background-color: #ebebeb;
+	opacity: 1;
+	float: left;
+	overflow-y: scroll;
+}
+
+#rightMain{
+	width: 60%;
+	height: 100%;
+	background-color: #ebebeb;
+	float: right;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    opacity: 0.7;
+    background: grey; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+}
+
+.listbox{ 
+    list-style-type:none;
+    box-shadow: 0 1 0 0 #888888;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    margin-left: 10%;
+    opacity: 0.7;
+    width:75%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
 
 
 
 /*LOGIN MODAL CSS INFO*/
 #myModal{
 	display: none;  
-          position: fixed;
-          z-index: 1; 
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: 
-          rgb(0,0,0);  
-          background-color: 
-          rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: 
+    rgb(0,0,0);  
+    background-color: 
+    rgba(0,0,0,0.4);
 }
 
 .modal-content{
 	background-color: #fefefe;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 300px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
 }
 
 .Close{
