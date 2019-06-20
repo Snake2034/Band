@@ -51,6 +51,25 @@ function loadFunc()
 
 		document.getElementById("leftMain").appendChild(div);
 	}
+
+	var alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+	'j', 'k' ,'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'v'
+	, 'u', 'w', 'x', 'y', 'z'];  
+
+	for (var i = 0; i < alpha.length; i++)
+	{
+		var a = document.createElement("div");
+		a.setAttribute("id", "aDivs");
+		a.style.width = "100%";
+		a.style.height = "40px";
+		a.style.background = "white";
+
+		document.getElementById("alphabetSearch").appendChild(a);
+
+		var para = document.createElement("p");
+		para.innerHTML = 'a';
+		document.getElementById("aDivs").appendChild(para);
+	}
 }
 
 
