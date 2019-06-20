@@ -24,11 +24,12 @@
 
 #homeButton{
 	background-color: transparent;
-	 color: white; 
-	 width: 120px; 
-	 float: left; 
-	 font-size: 20px; 
-	 border-style: none;
+	color: white; 
+	width: 120px; 
+	float: left; 
+	font-size: 20px; 
+	border-style: none;
+	border-radius: 25px;
 }
 
 #memberButton{
