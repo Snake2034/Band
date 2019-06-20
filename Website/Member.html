@@ -5,6 +5,8 @@
 
     <title>Members</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="framework7-4.4.3\packages\core\css\framework7.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/member.css">
@@ -42,18 +44,19 @@
             
             <!-- <div id="alphabetSearch"></div> -->
 
+            <!-- <button id="musicianSelect"><span id="musicianSpan">Musicians</span></button> -->
+
           </div>
 
             <div id="mainDiv">
 
               <div id="filterBar">
                 
-                
-
                 <button type="button" id="filterButton">Options</button>
 
-                <input type="text" name="search" placeholder="search..." id="searchInput">
+                <input type="text" name="search" placeholder="search.." id="searchInput">
 
+                 <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
               </div>
 
               <div id="leftMain">
@@ -64,7 +67,10 @@
 
               <div id="rightMain">
 
+                <div id="headerProf">
+                  
                 <h1 style="color: white; font-size: 50px;">Start by selecting a profile</h1>
+              </div>
 
               </div>
                 
@@ -100,7 +106,7 @@
 
               <input id="loginIpassword" type="text" name="userNameInput">
 
-              <a href="" style="float: right;" >Forgot Password?</a>
+              <a href="" style="float: right;">Forgot Password?</a>
 
             </div>
 
@@ -185,6 +191,26 @@
           </div>
 
         </div>
+
+
+
+         <!-- OPTIONS MODAL -->
+      <div id="optionModal1" class="modal">
+       
+        <div class="modal-content">
+
+          <span class="optionFilter">&times;</span>
+
+            <div style="width: 80%; float: center; background-color: white; margin: auto;">
+
+             <h2 style="text-align: center;">hello</h2>
+
+            </div>
+
+          </div>
+
+      </div>
+
 
       </div>
      
