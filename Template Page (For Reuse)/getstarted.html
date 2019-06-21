@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <link rel="stylesheet" href="css/getstarted.css">
+
+	 <script type="text/javascript" src="js/getstarted.js"></script>
+
+</head>
+	
+<body onresize="resizeFunc()" onload="loadFunc()">
+
+<div class="main">
+	<div class="navBar">
+
+
+		<!-- CONTENT ABOVE 700 WIDTH -->
+		<div id="leftSpace" class="leftSpace"></div>
+
+		<div id="navContent" class="navContent">
+
+			<img src="images/logo.png" id="logoImage" onclick="goToindex()">		
+			
+			<!-- home button -->
+			<button id="homeButton" type="button-round" onclick="Home()">Home</button>
+
+			<!-- member button -->
+        	<button id="memberButton" type="button-round" onclick="Member()">Members</button>  
+
+        	<!-- login button -->
+        	<button type="button-round" id="loginButton">Log in</button>
+
+        	<!-- register button -->
+        	<button type="button-round" id="registerButton">Sign up	</button>
+
+        </div>
+
+        <div id="rightSpace" class="rightSpace"></div>
+
+
+
+        <!-- CONTENT BELOW 700 WIDTH -->
+		  <div id="navContentSmall" class="navContentSmall">
+			
+			    <img src="images/logo.png" id="logoImage" onclick="goToindex()">
+
+			     <div class="dropdown">
+
+    			 <button class="dropbtn">Menu 
+      				<i class="fa fa-caret-down"></i>
+    			 </button>
+
+    		  <div class="dropdown-content">
+      				<a href="#">Link 1</a>
+      				<a href="#">Link 2</a>
+      				<a href="#">Link 3</a>
+    			</div>
+  			</div> 
+		</div>
+
+	</div>
+
+
+
+
+  <div id="mainContent" class="mainConent">
+    
+    <div id="mainContentLeft" class="mainContentLeft"></div>
+
+    <div id="mainContentMiddle" class="mainContentMiddle">
+      
+      <div id="mainTopContent" class="mainTopContent">
+        
+        <h1 id="heading1">How it works</h1>
+
+      </div>
+
+      <div id="mainBottomContent" class="mainBottomContent">
+
+        
+
+      </div>
+
+
+    </div>
+
+    <div id="mainContentRight" class="mainContentRight"></div>
+
+  </div>
+
+
+    <div id="myModal" class="modal">
+
+        <!-- LOGIN MODAL -->
+        <div class="modal-content">
+
+          <span class="Close">&times;</span>
+
+            <div class="topModal">
+
+             <h2 style="text-align: center;">Log in</h2>
+
+            </div>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+              
+              <p style="">Username</p>
+
+              <input id="loginIusername" type="text" name="userNameInput">
+
+              <p style="">Password</p>
+
+              <input id="loginIpassword" type="text" name="userNameInput">
+
+              <a href="" style="float: right;" >Forgot Password?</a>
+
+            </div>
+
+            <br></br>
+
+            <div style="width: 100%; background-color: white; margin: auto;">
+
+              <button id="modalLoginButton" type="button-round">Log in</button>
+
+              <br></br>
+
+              <p style="text-align: center;">Dont have an account?</p>
+
+              <button type="button-round" id="registerLoginButton">Register</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- REGISTER MODAL -->
+    <div id="registerModal" class="modal">
+    
+        <div class="modal-content">
+
+          <span class="registerClose">&times;</span>
+
+            <div id="registerTopInner">
+
+              <h2 id="regHeading2">Register</h2>
+
+            </div>
+
+            <div id="registBotInner">       
+
+              <p style="">Email</p>
+                <input id="registerIemail" type="text" name="emailInput">
+
+                <p style="">Username</p>
+                <input id="registerIusername" type="text" name="userNameInput">
+
+                <p style="">Password</p>
+                <input id="registerIpassword" type="text" name="userNameInput">
+
+            </div>
+
+            <br></br>
+
+            <div id="registerOtherBot">
+
+                <button type="button-round" id="registerModalButton">Register</button>
+
+                <br></br>
+
+              <p style="text-align: center;">Already have an account?</p>
+
+                <button type="button-round" id="loginRegisterButton">Login</button>
+
+            </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- EMAIL CONFIRM MODAL -->
+      <div id="confirmEmailModal" class="modal">
+       
+          <div class="modal-content">
+
+              <span class="emailConfirmation">&times;</span>
+
+              <div id="emailInner">
+
+                <h2 id="confirmHeading2">Please verify your new account via your email address.</h2>
+
+              </div>
+
+            </div>
+
+        </div>
+
+      </div>
+     
+    </div>
+	
+</div>
+
+</body>
+</html>
