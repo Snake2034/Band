@@ -123,7 +123,7 @@
 
             <div style="width: 100%; background-color: white; margin: auto;">
 
-              <button type="button-round" id="registerModalButton">Register</button>
+              <button type="button-round" id="registerModalButton" onclick="">Register</button>
 
               <br></br>
 
@@ -175,6 +175,28 @@
     <script type="text/javascript" src="framework7-4.4.3\packages\core\js\framework7.min.js"></script>
 
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // didnt work -- alert("Jquery is working");
 
+        $("#registerModalButton").click(function(){
+        var name = $("$name").val();
+        var email = $("$email").val();
+        var pass = $("$pass").val();
+
+          $.ajax({
+            url: "ajax.php",
+            type: "POST",
+            async: false,
+            data: {
+              "name" : name,
+              "email" : email,
+              "pass" : pass;
+            },
+            success: function(data)
+          })
+        })
+      });
+    </script>
   </body>
 </html>              
