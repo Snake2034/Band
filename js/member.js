@@ -27,9 +27,6 @@ function navDisplayControl(){
 		document.getElementById("mainContentRight").style.display = "none";
 		document.getElementById("mainContentMiddle").style.width = "100%";
 
-		//BOX CONTAINER
-		// document.getElementById("boxContainer").style.width = "100%";
-
 	}
 	else
 	{
@@ -37,12 +34,11 @@ function navDisplayControl(){
 		document.getElementById("leftSpace").style.display = "block";
 		document.getElementById("rightSpace").style.display = "block";
 		document.getElementById("navContent").style.width = "80%";
-
+		
 		//FOR MAIN CONTENT
 		document.getElementById("mainContentLeft").style.display = "block";
 		document.getElementById("mainContentRight").style.display = "block";
 		document.getElementById("mainContentMiddle").style.width = "80%";
-
 	}
 
 	if(width < 650)
@@ -51,12 +47,21 @@ function navDisplayControl(){
 		document.getElementById("navContent").style.display = "none";
 		document.getElementById("navContentSmall").style.display = "block";
 
+		//FOR MAIN CONTENT
+		document.getElementById("mainRightContent").style.display = "none";
+		document.getElementById("mainLeftContent").style.width = "100%";
+
 	}
 	else
 	{		
 		// FOR NAVIGTION BAR
 		document.getElementById("navContentSmall").style.display = "none";
 		document.getElementById("navContent").style.display = "block";
+
+		//FOR MAIN CONTENT
+		document.getElementById("mainRightContent").style.display = "block";
+		document.getElementById("mainLeftContent").style.width = "40%";
+
 
 	}
 }

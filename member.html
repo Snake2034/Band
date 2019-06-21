@@ -6,6 +6,8 @@
 
 	 <script type="text/javascript" src="js/member.js"></script>
 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 	
 <body onresize="resizeFunc()" onload="loadFunc()">
@@ -64,25 +66,30 @@
 
 
   <div id="mainContent" class="mainConent">
-    
-    <div id="mainContentLeft" class="mainContentLeft"></div>
 
-    <div id="mainContentMiddle" class="mainContentMiddle">
       
-      <div id="mainLeftContent" class="mainLeftContent">
-        
+    
+      <div id="mainContentLeft" class="mainContentLeft"></div>
 
-      </div>
+      <div id="mainContentMiddle" class="mainContentMiddle">
 
-      <div id="mainRightContent" class="mainRightContent">
+          <div id="filterBar" class="filterBar">
+            
+            <button id="optionsButton">Options</button>
 
-        
+            <input id="searchBar" type="text" name="search" placeholder="search..">
 
-      </div>
+            <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
 
-    </div>
+          </div>
+ 
+          <div id="mainLeftContent" class="mainLeftContent"></div>
 
-    <div id="mainContentRight" class="mainContentRight"></div>
+          <div id="mainRightContent" class="mainRightContent"></div>
+
+          </div>
+
+      <div id="mainContentRight" class="mainContentRight"></div>
 
   </div>
 

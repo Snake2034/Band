@@ -208,11 +208,18 @@ html, body{
 
 
 /*________________inner divs*/
+.filterBar{
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    opacity: 0.9;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 .mainLeftContent{
   width: 40%;
-  height: 100%;
+  height: 95%;
   border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
   background-color: black;
   opacity: 0.9;
   float: left;
@@ -220,16 +227,38 @@ html, body{
 }
 .mainRightContent{
   width: 60%;
-  height: 100%;
+  height: 95%;
   background-color: black;
   float: right;
   opacity: 0.9;
   border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
 }
 
+#optionsButton{
+  margin-left: 20px;
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-size: 22px;
+  background-color: #ff6699;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+}
 
+#searchBar{
+  margin-top: 5px;
+  font-size: 22px;
+  border-style: none;
+  margin-left: 50px;
+}
 
+#searchButton{
+  margin-top: 5px;
+ font-size: 22px;
+ background-color: #ff6699;
+ color: white;
+ border-style: none;
+}
 
 
 
