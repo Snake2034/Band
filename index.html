@@ -2,6 +2,17 @@
 <html>
 
 <head>
+  <script><?php
+      // We need to use sessions, so you should always start sessions using the below code.
+      session_start();
+      // If the user is not logged in redirect to the login page...
+      if (!isset($_SESSION['loggedin'])) {
+        header('Location: index.html');
+        exit();
+      }
+      ?>
+      
+   </script>
 	 <link rel="stylesheet" href="css/index.css">
 
 	 <script type="text/javascript" src="js/index.js"></script>
@@ -97,8 +108,8 @@
              <h2 style="text-align: center; font-family: sans-serif;">Log in</h2>
 
             </div>
-
-            <div style="width: 100%; background-color: white; margin: auto;">
+            <form action="login.php">
+              <div style="width: 100%; background-color: white; margin: auto;">
               
               <p style="font-family: sans-serif;">Username</p>
 
@@ -106,7 +117,7 @@
 
               <p style="font-family: sans-serif;">Password</p>
 
-              <input id="loginIpassword" type="text" name="userNameInput">
+              <input id="loginIpassword" type="text" name="passwordInput">
 
               <a href="" style="float: right;font-family: sans-serif;" >Forgot Password?</a>
 
@@ -125,6 +136,8 @@
               <button type="button-round" id="registerLoginButton">Register</button>
 
             </div>
+            </form>
+            
 
           </div>
 
