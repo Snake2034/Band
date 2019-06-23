@@ -1,17 +1,17 @@
 function loadFunc(){
 
-	navDisplayControl();
+	displayControl();
 	load();
 }
 
 
 function resizeFunc(){
 
-	navDisplayControl();
+	displayControl();
 }
 
 
-function navDisplayControl(){
+function displayControl(){
 
 	var width = window.innerWidth;
 
@@ -27,8 +27,7 @@ function navDisplayControl(){
 		document.getElementById("mainContentRight").style.display = "none";
 		document.getElementById("mainContentMiddle").style.width = "100%";
 
-		//BOX CONTAINER
-		// document.getElementById("boxContainer").style.width = "100%";
+	 	divSizing(width);
 
 	}
 	else
@@ -61,7 +60,27 @@ function navDisplayControl(){
 	}
 }
 
+function divSizing(width){
 
+	var left = 40;
+	var right = 60;
+	var currentWidth = width;
+
+	if(currentWidth < width)
+	{
+		left + 5;
+		right - 5;
+	}
+	else
+	{
+		right + 5;
+		left - 5;
+	}
+
+	document.getElementById("leftSide").style.width = left + "%";
+	document.getElementById("rightSide").style.width = right + "%";
+
+}
 
 
 function load(){

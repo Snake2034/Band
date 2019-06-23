@@ -172,16 +172,32 @@ html, body{
 .mainBottomContent{
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: transparent;
   overflow: auto;
 
 }
 
 .leftSide{
-  background-color: white;
+  background-color: transparent;
   width: 30%;
   height: 100%;
   float:left;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.leftSideTop{
+  width: 100%;
+  height: 30%;
+  background-color: blue;
+  border-top-left-radius: 25px;
+  text-align: center;
+}
+.leftSidebottom{
+  width: 100%;
+  height: 70%;
+  background-color: pink;
+  border-bottom-left-radius: 25px;
+  text-align: center;
 }
 
 .rightSide{
@@ -189,7 +205,11 @@ html, body{
   width: 70%;
   height: 100%;
   float: right;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+
 }
+
 
 
 ::-webkit-scrollbar {
