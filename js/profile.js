@@ -50,22 +50,14 @@ function navDisplayControl(){
 		// FOR NAVIGTION BAR
 		document.getElementById("navContent").style.display = "none";
 		document.getElementById("navContentSmall").style.display = "block";
+
 	}
 	else
 	{		
 		// FOR NAVIGTION BAR
 		document.getElementById("navContentSmall").style.display = "none";
-		document.getElementById("navContent").style.display = "block";	
-	}
+		document.getElementById("navContent").style.display = "block";
 
-	if(width < 700)
-	{
-		document.getElementById("mainBottomContent").style.overflowX = "scroll";
-		document.getElementById("mainBottomContent").style.overflowY = "hidden";
-	}
-	else
-	{
-		document.getElementById("mainBottomContent").style.overflow = "initial";
 	}
 }
 
@@ -88,6 +80,8 @@ var btn4 = document.getElementById("registerModalButton");
 var btn6 = document.getElementById("memberButton");
 var btn7 = document.getElementById("homeButton");
 var btn8 = document.getElementById("logoImage");
+
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("Close")[0];
@@ -147,5 +141,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 }

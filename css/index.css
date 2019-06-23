@@ -179,6 +179,40 @@ html, body{
     border-style: none;  
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    opacity: 0.7;
+    background: #ff6699; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6699; 
+}
+
+.listbox{ 
+    list-style-type:none;
+    box-shadow: 0 1 0 0 #888888;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    margin-left: 10%;
+    opacity: 0.7;
+    width:75%;
+    border-radius: 5px;
+    padding: 20px;
+}
 
 /*_______________________________MODEL CSS*/
 .close:hover, .close:focus{

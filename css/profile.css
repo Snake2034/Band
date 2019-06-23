@@ -16,8 +16,6 @@ html, body{
 }
 
 
-
-
 /*____________________________NAVIGATION BAR OVER 700 WIDTH*/
 .navBar{
   background-color: transparent; 
@@ -88,43 +86,6 @@ html, body{
   margin-top: 10px;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;  
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    opacity: 0.7;
-    background: #ff6699; 
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #ff6699; 
-}
-
-.listbox{ 
-    list-style-type:none;
-    box-shadow: 0 1 0 0 #888888;
-    background-color: black;
-    color: white;
-    margin: 20px;
-    margin-left: 10%;
-    opacity: 0.7;
-    width:75%;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-
-
 /*____________________________NAVIGATION BAR UNDER 700 WIDTH*/
 .navContentSmall{
   height: 50px;
@@ -178,7 +139,6 @@ html, body{
 
 /*________________________________MAIN CONTENT CSS*/
 .mainConent{
-  margin-top: 10px;
   width: 100%;
   height: 90%;
   background-color: transparent;
@@ -188,7 +148,6 @@ html, body{
   width: 80%;
   height: 100%;
   background-color: transparent;
-    border-radius: 25px;
   float: left;
 }
 .mainContentLeft{
@@ -198,84 +157,81 @@ html, body{
   float:left;
 }
 .mainContentRight{
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
   width: 10%;
   height: 100%;
   background-color: transparent;
   float:right;
 }
 
-
-/*________________inner divs*/
-.filterBar{
-    width: 100%;
-    height: 40px;
-    background-color: black;
-    opacity: 0.9;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-.mainLeftContent{
-  width: 40%;
-  height: 95%;
-  border-bottom-left-radius: 25px;
-  background-color: black;
-  opacity: 0.9;
-  float: left;
-  overflow: auto;
-}
-.mainRightContent{
-  width: 60%;
-  height: 95%;
-  background-color: black;
-  float: right;
-  opacity: 0.9;
-  border-bottom-right-radius: 25px;
-}
-
-#optionsButton{
-  margin-left: 20px;
-  margin-top: 5px;
-  font-family: sans-serif;
-  font-size: 22px;
-  background-color: #ff6699;
+#heading1{
+  font-size: 80px;
   color: white;
-  border-style: none;
-  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.mainBottomContent{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  overflow: auto;
+
 }
 
-#searchBar{
-  margin-top: 5px;
-  font-size: 22px;
-  border-style: none;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+.leftSide{
+  background-color: white;
+  width: 30%;
+  height: 100%;
+  float:left;
+}
+
+.rightSide{
+  background-color: red;
+  width: 70%;
+  height: 100%;
   float: right;
 }
 
-#searchButton{
-  margin-top: 5px;
- font-size: 22px;
- background-color: #ff6699;
- color: white;
- border-style: none;
- float: right;
- margin-right: 15px;
- border-top-right-radius: 5px;
- border-bottom-right-radius: 5px;
+
+::-webkit-scrollbar {
+    width: 15px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;  
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    opacity: 0.7;
+    background: #ff6699; 
+    border-radius: 10px;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6699; 
+}
+
+.listbox{ 
+    list-style-type:none;
+    box-shadow: 0 1 0 0 #888888;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    margin-left: 10%;
+    opacity: 0.7;
+    width:75%;
+    border-radius: 5px;
+    padding: 20px;
+}
 /*_______________________________MODEL CSS*/
 .close:hover, .close:focus{
   color:black;
   text-decoration: none;
   cursor: pointer;
 }
-
-
 /*_________________________LOGIN MODAL CSS INFO*/
 #myModal{
   display: none;  
@@ -448,45 +404,6 @@ html, body{
   font-weight: bold;
 }
 #emailInner{
-  width: 80%;
-  float: center; 
-  background-color: 
-  white; margin: auto;
-}
-#confirmHeading2{
-  text-align: center;
-}
-
-
-/*_________________________EMAIL MODAL CSS INFO*/
-#optionButtonModal{
-  display: none;  
-  position: fixed;
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: 
-  rgb(0,0,0);  
-  background-color: 
-  rgba(0,0,0,0.4);
-}
-.model-content{
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 300px;
-}
-.optionFilter{
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-#optionInner{
   width: 80%;
   float: center; 
   background-color: 

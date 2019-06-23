@@ -2,19 +2,9 @@
 <html>
 
 <head>
-	 <link rel="stylesheet" href="css/getstarted.css">
+	 <link rel="stylesheet" href="css/profile.css">
 
-	 <script type="text/javascript" src="js/getstarted.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".box1").fadeIn(1000).css("display", "inline-block");
-    $(".box2").fadeIn(1500).css("display", "inline-block");
-    $(".box3").fadeIn(2000).css("display", "inline-block");
-    $(".box4").fadeIn(2500).css("display", "inline-block");
-  });
-</script>
+	 <script type="text/javascript" src="js/profile.js"></script>
 
 </head>
 	
@@ -29,13 +19,13 @@ $(document).ready(function(){
 
 		<div id="navContent" class="navContent">
 
-			<img src="images/logo.png" id="logoImage">		
+			<img src="images/logo.png" id="logoImage" onclick="goToindex()">		
 			
 			<!-- home button -->
-			<button id="homeButton" type="button-round">Home</button>
+			<button id="homeButton" type="button-round" onclick="Home()">Home</button>
 
 			<!-- member button -->
-        	<button id="memberButton" type="button-round">Members</button>  
+        	<button id="memberButton" type="button-round" onclick="Member()">Members</button>  
 
         	<!-- login button -->
         	<button type="button-round" id="loginButton">Log in</button>
@@ -52,7 +42,7 @@ $(document).ready(function(){
         <!-- CONTENT BELOW 700 WIDTH -->
 		  <div id="navContentSmall" class="navContentSmall">
 			
-			    <img src="images/logo.png" id="logoImage">
+			    <img src="images/logo.png" id="logoImage" onclick="goToindex()">
 
 			     <div class="dropdown">
 
@@ -77,29 +67,14 @@ $(document).ready(function(){
     
     <div id="mainContentLeft" class="mainContentLeft"></div>
 
-    <div id="mainContentMiddle" class="mainContentMiddle">
-      
-      <div id="mainTopContent" class="mainTopContent">
-        
-        <h1 id="heading1">How it works</h1>
-
-      </div>
+    <div id="mainContentMiddle" class="mainContentMiddle">     
 
       <div id="mainBottomContent" class="mainBottomContent">
 
-        <div class="box1"></div>
+        <div class="leftSide" id="leftSide"></div>
 
-        <div class="box2"></div>
+         <div class="rightSide" id="rightSide"></div>
 
-        <div class="box3"></div>
-
-        <div class="box4"></div>
-
-      </div>
-
-      <div class="bottomButtonDiv">
-        
-        <button id="howItworksButton">Sign up today</button>
       </div>
 
 
@@ -112,7 +87,7 @@ $(document).ready(function(){
 
     <div id="myModal" class="modal">
 
-        <!-- LOGIN MODAL -->
+               <!-- LOGIN MODAL -->
         <div class="modal-content">
 
           <span class="Close">&times;</span>
@@ -222,7 +197,7 @@ $(document).ready(function(){
       </div>
      
     </div>
-	
+  
 </div>
 
 </body>
