@@ -97,6 +97,7 @@ function load(){
 var modal = document.getElementById("myModal");
 var modal1 = document.getElementById("registerModal");
 var modal2 = document.getElementById("confirmEmailModal");
+var modal3 = document.getElementById("optionButtonModal");
 
 
 // Get the button that opens the modal
@@ -105,6 +106,7 @@ var btn1 = document.getElementById("registerButton");
 var btn2 = document.getElementById("registerLoginButton");
 var btn3 = document.getElementById("loginRegisterButton");
 var btn4 = document.getElementById("registerModalButton");
+var btn5 = document.getElementById("optionsButton");
 var btn6 = document.getElementById("memberButton");
 var btn7 = document.getElementById("homeButton");
 var btn8 = document.getElementById("logoImage");
@@ -115,6 +117,7 @@ var btn8 = document.getElementById("logoImage");
 var span = document.getElementsByClassName("Close")[0];
 var span1 = document.getElementsByClassName("registerClose")[0];
 var span2 = document.getElementsByClassName("emailConfirmation")[0];
+var span3 = document.getElementsByClassName("optionFilter")[0];
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
@@ -139,9 +142,11 @@ btn4.onclick = function(){
 	modal1.style.display = "none";
 	modal2.style.display = "block";
 }
-
 btn6.onclick = function(){
 	window.location.href = "member.html";
+}
+btn5.onclick = function(){
+	modal3.style.display = "block";
 }
 
 btn7.onclick = function(){
@@ -162,6 +167,9 @@ span1.onclick = function() {
 span2.onclick = function() {
   modal2.style.display = "none";
 }
+span3.onclick = function(){
+  modal3.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -169,4 +177,5 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 }

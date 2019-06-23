@@ -249,7 +249,9 @@ html, body{
   margin-top: 5px;
   font-size: 22px;
   border-style: none;
-  margin-left: 50px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  float: right;
 }
 
 #searchButton{
@@ -258,6 +260,10 @@ html, body{
  background-color: #ff6699;
  color: white;
  border-style: none;
+ float: right;
+ margin-right: 15px;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
 }
 
 
@@ -442,6 +448,45 @@ html, body{
   font-weight: bold;
 }
 #emailInner{
+  width: 80%;
+  float: center; 
+  background-color: 
+  white; margin: auto;
+}
+#confirmHeading2{
+  text-align: center;
+}
+
+
+/*_________________________EMAIL MODAL CSS INFO*/
+#optionButtonModal{
+  display: none;  
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: 
+  rgb(0,0,0);  
+  background-color: 
+  rgba(0,0,0,0.4);
+}
+.model-content{
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+.optionFilter{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#optionInner{
   width: 80%;
   float: center; 
   background-color: 
