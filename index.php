@@ -40,13 +40,15 @@
         	<button id="memberButton" type="button-round" onclick="Member()">Members</button>  
 
 
-			<p>Welcome back, <?=$_SESSION['Name']?>!</p>
-
-			<a href="logout.php">LOGOUT</a>
+        	<p>Welcome back, <?=$_SESSION['Name']?>!</p>
+			
 
         </div>
 
-        <div id="rightSpace" class="rightSpace"></div>
+        <div id="rightSpace" class="rightSpace">
+
+			<a href="logout.php">LOGOUT</a>
+        </div>
 
 
         <!-- CONTENT BELOW 700 WIDTH -->
