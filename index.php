@@ -16,6 +16,7 @@
 	 <!-- This js file doesnt work correctly with this php file
 	 <script type="text/javascript" src="js/index.js"></script>
 	-->
+	<script type="text/javascript" src="js/indexPHP.js"></script>
 
 </head>
 	

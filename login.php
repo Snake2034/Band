@@ -3,7 +3,7 @@
 	$name = $_REQUEST['userNameInput'];
 	$pass = $_REQUEST['passwordInput'];
 
-	echo $name . " " . $pass;
+	echo $name . " " . $pass . "<br>";
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
@@ -21,7 +21,7 @@
 	} 
 	//SELECT `Name`, `Password` FROM `accounts` WHERE Name = 'BC' && Password = 'RC' LIMIT 1
 	echo ("Display3 <br>");
-	$query = "SELECT `ID`, `Name`, `Password` FROM `accounts` WHERE Name = '$name' && Password = '$pass' LIMIT 1";
+	$query = "SELECT `ID`, `Name`, `Password` FROM `accounts` WHERE Name = '$name'";
 	$result = $conn->query($query);
 	if (mysqli_num_rows($result) > 0) 
 	{
@@ -30,7 +30,7 @@
 		// Account exists, now we verify the password.
 		// Note: remember to use password_hash in your registration file to store the hashed passwords.
 		echo ("Display5 <br>");
-		if ($row['Password'] === $pass) {
+		if (password_verify($pass, $row['Password'])) {
 			
 			// Verification success! User has loggedin!
 			// Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.

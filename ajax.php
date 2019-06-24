@@ -2,6 +2,7 @@
 	$name = $_REQUEST['Name'];
 	$email = $_REQUEST['Email'];
 	$pass = $_REQUEST['Password'];
+	$hash = password_hash($pass, PASSWORD_DEFAULT);
 
 	$servername = "localhost";
 	$username = "root";
@@ -33,7 +34,7 @@
 		echo "Account doesn't exist";
 
 	 //query for insert into db
-		$sql = "INSERT INTO accounts (Name, Email, Password) VALUES ('$name', '$email', '$pass')";
+		$sql = "INSERT INTO accounts (Name, Email, Password) VALUES ('$name', '$email', '$hash')";
 
 	//Try and insert into db
 	if ($conn->query($sql) === TRUE) {
