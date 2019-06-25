@@ -23,13 +23,20 @@ function getStarted(){
   document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="getstarted.html" ></object>';
 }
 
+function howitworksFunc(){
+  
+  doThis();
+}
+
+function doThis(){
+  alert();
+}
+
 function navDisplayControl(){
 
   var width = window.innerWidth;
 
-
-
-  if(width < 800)
+  if(width < 850)
   {
     // FOR NAVIGTION BAR
     document.getElementById("leftSpace").style.display = "none";
@@ -57,7 +64,7 @@ function navDisplayControl(){
     document.getElementById("mainContentMiddle").style.width = "80%";
   }
 
-  if(width < 650)
+  if(width < 700)
   {
     // FOR NAVIGTION BAR
     document.getElementById("navContent").style.display = "none";
@@ -130,6 +137,7 @@ span1.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    modal1.style.display = "none";
   }
 }
 }
