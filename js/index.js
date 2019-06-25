@@ -3,13 +3,21 @@ function loadFunc(){
   navDisplayControl();
   load();
 
-   document.getElementById("mainContentMiddle").href = "members.html";
+   
 }
 
 
 function resizeFunc(){
 
   navDisplayControl();
+}
+
+function Member(){
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="members.html" ></object>';
+}
+
+function Home(){
+
 }
 
 

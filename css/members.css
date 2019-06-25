@@ -1,0 +1,58 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/*________________________________MAIN CONTENT CSS*/
+.mainConent{
+  margin-top: 10px;
+  width: 100%;
+  height: 90%;
+  background-color: transparent;
+  float: left;
+}
+.mainContentMiddle{
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+    border-radius: 25px;
+  float: left;
+}
+.mainContentLeft{
+  width: 10%;
+  height: 100%;
+  background-color: transparent;
+  float:left;
+}
+.mainContentRight{
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 10%;
+  height: 100%;
+  background-color: transparent;
+  float:right;
+}
+
+
+/*________________inner divs*/
+.mainLeftContent{
+  width: 40%;
+  height: 100%;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: black;
+  opacity: 0.9;
+  float: left;
+  overflow: auto;
+}
+.mainRightContent{
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  float: right;
+  opacity: 0.9;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
