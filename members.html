@@ -6,31 +6,28 @@
 	
 	<script type="text/javascript" src="js/member.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
-<body>
-	
-	  <div id="mainContent" class="mainConent">
+<body onresize="resizeFunc()" onload="loadFunc()" >
+	  
+  <div class="mainConent">
+
+      <div id="filterBar" class="filterBar">
+          
+        <button id="optionsButton">Options</button>
+
+        <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
+
+        <input id="searchBar" type="text" name="search" placeholder="search..">
+
+      </div>
+
+      <div id="mainLeftContent" class="mainLeftContent"></div>
+
+      <div id="mainRightContent" class="mainRightContent"></div>
     
-    <div id="mainContentLeft" class="mainContentLeft"></div>
-
-    <div id="mainContentMiddle" class="mainContentMiddle">
-      
-      <div id="mainLeftContent" class="mainLeftContent">
-        
-
-      </div>
-
-      <div id="mainRightContent" class="mainRightContent">
-
-        
-
-      </div>
-
-    </div>
-
-    <div id="mainContentRight" class="mainContentRight"></div>
-
   </div>
 
 </body>

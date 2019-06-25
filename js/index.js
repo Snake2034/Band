@@ -1,9 +1,8 @@
 function loadFunc(){
   document.getElementById("navContentSmall").style.display = "none";
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="getstarted.html" ></object>';
   navDisplayControl();
   load();
-
-   
 }
 
 
@@ -17,9 +16,12 @@ function Member(){
 }
 
 function Home(){
-
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="home.html" ></object>';
 }
 
+function getStarted(){
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="getstarted.html" ></object>';
+}
 
 function navDisplayControl(){
 
