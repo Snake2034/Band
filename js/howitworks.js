@@ -14,4 +14,3 @@ function resize(){
 	var width = window.innerWidth;
 
 }
-

@@ -5,7 +5,6 @@ function loadFunc(){
   load();
 }
 
-
 function resizeFunc(){
 
   navDisplayControl();
@@ -24,13 +23,10 @@ function getStarted(){
 }
 
 function howitworksFunc(){
-  
-  doThis();
+  //document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="home.html" ></object>';
+  window.location.href = "howitworks.html";
 }
 
-function doThis(){
-  alert();
-}
 
 function navDisplayControl(){
 
