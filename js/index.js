@@ -1,78 +1,84 @@
 function loadFunc(){
-
-	navDisplayControl();
-	load();
+  document.getElementById("navContentSmall").style.display = "none";
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="getstarted.html" ></object>';
+  navDisplayControl();
+  load();
 }
-
 
 function resizeFunc(){
 
-	navDisplayControl();
+  navDisplayControl();
+}
+
+function Member(){
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="members.html" ></object>';
+}
+
+function Home(){
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="home.html" ></object>';
+}
+
+function getStarted(){
+  document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="getstarted.html" ></object>';
+}
+
+function howitworksFunc(){
+  //document.getElementById("mainContentMiddle").innerHTML='<object width="100%" height="100%" type="text/html" data="home.html" ></object>';
+  window.location.href = "howitworks.html";
 }
 
 
 function navDisplayControl(){
 
-	var width = window.innerWidth;
+  var width = window.innerWidth;
 
-	if(width < 800)
-	{
-		// FOR NAVIGTION BAR
-		document.getElementById("leftSpace").style.display = "none";
-		document.getElementById("rightSpace").style.display = "none";
-		document.getElementById("navContent").style.width = "100%";
+  if(width < 850)
+  {
+    // FOR NAVIGTION BAR
+    document.getElementById("leftSpace").style.display = "none";
+    document.getElementById("rightSpace").style.display = "none";
+    document.getElementById("navContent").style.width = "100%";
 
-		//FOR MAIN CONTENT
-		document.getElementById("mainContentLeft").style.display = "none";
-		document.getElementById("mainContentRight").style.display = "none";
-		document.getElementById("mainContentMiddle").style.width = "100%";
+    //FOR MAIN CONTENT
+    document.getElementById("mainContentLeft").style.display = "none";
+    document.getElementById("mainContentRight").style.display = "none";
+    document.getElementById("mainContentMiddle").style.width = "100%";
 
-		document.getElementById("heading1").style.fontSize = "70px";
+    //document.getElementById("heading1").style.fontSize = "70px";
 
-	}
-	else
-	{
-		// FOR NAVIGTION BAR
-		document.getElementById("leftSpace").style.display = "block";
-		document.getElementById("rightSpace").style.display = "block";
-		document.getElementById("navContent").style.width = "80%";
+  }
+  else
+  {
+    // FOR NAVIGTION BAR
+    document.getElementById("leftSpace").style.display = "block";
+    document.getElementById("rightSpace").style.display = "block";
+    document.getElementById("navContent").style.width = "80%";
 
-		//FOR MAIN CONTENT
-		document.getElementById("mainContentLeft").style.display = "block";
-		document.getElementById("mainContentRight").style.display = "block";
-		document.getElementById("mainContentMiddle").style.width = "80%";
+    //FOR MAIN CONTENT
+    document.getElementById("mainContentLeft").style.display = "block";
+    document.getElementById("mainContentRight").style.display = "block";
+    document.getElementById("mainContentMiddle").style.width = "80%";
+  }
 
-		//HEADING FONT ON RESIZE
-		document.getElementById("heading1").style.fontSize = "80px";
-	}
-
-	if(width < 650)
-	{
-		// FOR NAVIGTION BAR
-		document.getElementById("navContent").style.display = "none";
-		document.getElementById("navContentSmall").style.display = "block";
-
-		//HEADING FONT ON RESIZE
-		document.getElementById("heading1").style.fontSize = "60px";
-		document.getElementById("heading1").style.paddingTop = "20%";
-	}
-	else
-	{		
-		// FOR NAVIGTION BAR
-		document.getElementById("navContentSmall").style.display = "none";
-		document.getElementById("navContent").style.display = "block";
-
-		//HEADING FONT ON RESIZE
-		document.getElementById("heading1").style.fontSize = "70px";
-		document.getElementById("heading1").style.paddingTop = "10%";
-	}
+  if(width < 700)
+  {
+    // FOR NAVIGTION BAR
+    document.getElementById("navContent").style.display = "none";
+    document.getElementById("navContentSmall").style.display = "block";
+  }
+  else
+  {   
+    // FOR NAVIGTION BAR
+    document.getElementById("navContentSmall").style.display = "none";
+    document.getElementById("navContent").style.display = "block";
+  }
 }
 
 
 
 
 function load(){
-	// Get the modal
+  // Get the modal
 var modal = document.getElementById("myModal");
 var modal1 = document.getElementById("registerModal");
 var modal2 = document.getElementById("confirmEmailModal");
@@ -84,10 +90,7 @@ var btn1 = document.getElementById("registerButton");
 var btn2 = document.getElementById("registerLoginButton");
 var btn3 = document.getElementById("loginRegisterButton");
 var btn4 = document.getElementById("registerModalButton");
-var btn5 = document.getElementById("getStartedButton");
-var btn6 = document.getElementById("memberButton");
-var btn7 = document.getElementById("homeButton");
-var btn8 = document.getElementById("logoImage");
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("Close")[0];
@@ -100,38 +103,22 @@ btn.onclick = function() {
 }
 
 btn1.onclick = function(){
-	modal1.style.display = "block";
+  modal1.style.display = "block";
 }
 
 btn2.onclick = function(){
-	modal.style.display = "none";
-	modal1.style.display = "block";
+  modal.style.display = "none";
+  modal1.style.display = "block";
 }
 
 btn3.onclick = function(){
-	modal1.style.display = "none";
-	modal.style.display = "block";
+  modal1.style.display = "none";
+  modal.style.display = "block";
 }
 
 btn4.onclick = function(){
-	modal1.style.display = "none";
-	modal2.style.display = "block";
-}
-
-btn5.onclick = function(){
-	window.location.href = "getstarted.html";
-}
-
-btn6.onclick = function(){
-	window.location.href = "member.html";
-}
-
-btn7.onclick = function(){
-	window.location.href = "home.html";
-}
-
-btn8.onclick = function(){
-	window.location.href = "index.html";
+  modal1.style.display = "none";
+  modal2.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -141,14 +128,12 @@ span.onclick = function() {
 span1.onclick = function() {
   modal1.style.display = "none";
 }
-span2.onclick = function() {
-  modal2.style.display = "none";
-}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    modal1.style.display = "none";
   }
 }
 }
