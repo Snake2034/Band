@@ -52,3 +52,19 @@ function resize(){
 	}
 
 }
+
+function buildMemberCard(){
+
+	var profileCard;
+	var username;
+	var picture;
+	var location;
+	var description;
+
+	var memberArray = [username, picture, location, description]
+
+	profileCard = document.createElement("div");
+
+
+
+}
